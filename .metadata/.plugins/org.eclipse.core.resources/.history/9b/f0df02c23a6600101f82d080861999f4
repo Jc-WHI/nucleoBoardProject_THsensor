@@ -1,0 +1,129 @@
+#include"dht11.h"
+#define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+#define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+
+
+static TIM_HandleTypeDef *dht_htim;
+
+// 초기화 함수
+void DHT11_Init(TIM_HandleTypeDef *htim)
+{
+    dht_htim = htim;
+}
+
+// 마이크로초 지연 함수
+static void delay_us(uint16_t us)
+{
+    __HAL_TIM_SET_COUNTER(dht_htim, 0); // 타이머 카운터 초기화
+    while (__HAL_TIM_GET_COUNTER(dht_htim) < us); // 카운터가 목표 값에 도달할 때까지 대기
+}
+static void Set_Pin_Output(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    GPIO_InitStruct.Pin = DHT11_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull 출력 모드
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+}
+
+static void Set_Pin_Input(void)
+{
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+    GPIO_InitStruct.Pin = DHT11_PIN;
+    GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 입력 모드
+    GPIO_InitStruct.Pull = GPIO_NOPULL; // 풀업은 외부에 있으므로 No-pull
+    HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+}
+
+// dht11.c
+
+// 시작 신호 전송 및 응답 확인 함수
+static HAL_StatusTypeDef DHT11_Start(void)
+{
+    // 시작 신호 전송
+    Set_Pin_Output();
+    HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+    delay_us(18000); // 18ms 동안 LOW 유지
+    HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+    delay_us(30); // 30us 동안 HIGH 유지
+    Set_Pin_Input();
+
+    // 응답 확인
+    __HAL_TIM_SET_COUNTER(dht_htim, 0);
+    while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+    {
+        if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+    }
+
+    __HAL_TIM_SET_COUNTER(dht_htim, 0);
+    while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+    {
+        if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+    }
+
+    __HAL_TIM_SET_COUNTER(dht_htim, 0);
+    while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+    {
+        if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+    }
+
+    return HAL_OK;
+}
+
+// 1바이트 데이터 읽기 함수
+static uint8_t DHT11_Read_Byte(void)
+{
+    uint8_t data_byte = 0;
+    for(int i = 0; i < 8; i++)
+    {
+        // 비트 시작 (50us LOW) 대기
+        __HAL_TIM_SET_COUNTER(dht_htim, 0);
+        while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+        {
+            if(__HAL_TIM_GET_COUNTER(dht_htim) > 60) return 0; // 타임아웃
+        }
+
+        // HIGH 펄스 폭 측정
+        __HAL_TIM_SET_COUNTER(dht_htim, 0);
+        while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+        {
+            if(__HAL_TIM_GET_COUNTER(dht_htim) > 80) return 0; // 타임아웃
+        }
+        uint16_t pulse_width = __HAL_TIM_GET_COUNTER(dht_htim);
+
+        // 펄스 폭에 따라 0 또는 1 결정
+        if(pulse_width > 40) // 26-28us(0)와 70us(1)의 중간값 정도
+        {
+            data_byte |= (1 << (7 - i));
+        }
+    }
+    return data_byte;
+}
+
+// 공개 API: 데이터 읽기 메인 함수
+HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+{
+    uint8_t buffer = {0};
+
+    if(DHT11_Start()!= HAL_OK)
+    {
+        return HAL_TIMEOUT;
+    }
+
+    for(int i = 0; i < 5; i++)
+    {
+        buffer[i] = DHT11_Read_Byte();
+    }
+
+    // 체크섬 검증
+    if(buffer == ((buffer + buffer + buffer + buffer) & 0xFF))
+    {
+        data->Humidity = (float)buffer;
+        data->Temperature = (float)buffer;
+        return HAL_OK;
+    }
+    else
+    {
+        return HAL_ERROR; // 체크섬 불일치
+    }
+}

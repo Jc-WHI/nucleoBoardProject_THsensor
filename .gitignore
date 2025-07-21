@@ -1,0 +1,49 @@
+# STM32CubeIDE/STM32CubeMX generated files
+*.launch
+*.log
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.d
+*.dep
+*.list
+*.lss
+*.bak
+*.tmp
+*.swp
+*.swo
+*.su
+*.exe
+
+# Build output folders
+/Debug/
+/debug/
+/Release/
+/release/
+/build/
+/Build/
+
+# IDE settings
+/.settings/
+/.cproject
+/.project
+/.mxproject
+/.idea/
+/.vscode/
+/.ipch/
+/*.db
+
+# CubeMX generated backup files
+*~ 
+*.ioc-backup
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# User-specific files
+*.user
+*.sublime-workspace
+*.sublime-project

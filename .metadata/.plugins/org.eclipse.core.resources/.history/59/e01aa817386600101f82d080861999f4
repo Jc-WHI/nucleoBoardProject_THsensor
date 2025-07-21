@@ -1,0 +1,13 @@
+/*
+ * dht11.h
+ *
+ *  Created on: Jul 21, 2025
+ *      Author: jochiho
+ */
+
+#ifndef SRC_DHT11_H_
+#define SRC_DHT11_H_
+
+
+
+#endif /* SRC_DHT11_H_ */

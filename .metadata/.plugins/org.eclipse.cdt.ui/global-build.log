@@ -1,0 +1,1047 @@
+22:54:00 **** Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+../Core/Src/dht11.c:4:8: error: unknown type name 'HAL_StatusTypeDef'
+    4 | static HAL_StatusTypeDef DHT11_Start(void)
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+      |        ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:7:5: warning: implicit declaration of function 'Set_Pin_Output' [-Wimplicit-function-declaration]
+    7 |     Set_Pin_Output();
+      |     ^~~~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+../Core/Src/dht11.c:8:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:8:23: error: 'DHT11_PORT' undeclared (first use in this function)
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~
+../Core/Src/dht11.c:8:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/dht11.c:8:35: error: 'DHT11_PIN' undeclared (first use in this function)
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                   ^~~~~~~~~
+../Core/Src/dht11.c:8:46: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                              ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:9:5: warning: implicit declaration of function 'delay_us' [-Wimplicit-function-declaration]
+    9 |     delay_us(18000); // 18ms 동안 LOW 유지
+      |     ^~~~~~~~
+../Core/Src/dht11.c:10:46: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   10 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+      |                                              ^~~~~~~~~~~~
+../Core/Src/dht11.c:12:5: warning: implicit declaration of function 'Set_Pin_Input' [-Wimplicit-function-declaration]
+   12 |     Set_Pin_Input();
+      |     ^~~~~~~~~~~~~
+../Core/Src/dht11.c:15:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   15 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:15:27: error: 'dht_htim' undeclared (first use in this function)
+   15 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |                           ^~~~~~~~
+../Core/Src/dht11.c:16:11: warning: implicit declaration of function 'HAL_GPIO_ReadPin' [-Wimplicit-function-declaration]
+   16 |     while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |           ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   18 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:58: error: 'HAL_TIMEOUT' undeclared (first use in this function)
+   18 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |                                                          ^~~~~~~~~~~
+../Core/Src/dht11.c:33:12: error: 'HAL_OK' undeclared (first use in this function)
+   33 |     return HAL_OK;
+      |            ^~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:37:8: error: unknown type name 'uint8_t'
+   37 | static uint8_t DHT11_Read_Byte(void)
+      |        ^~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Read_Byte':
+../Core/Src/dht11.c:39:5: error: unknown type name 'uint8_t'
+   39 |     uint8_t data_byte = 0;
+      |     ^~~~~~~
+../Core/Src/dht11.c:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | // dht11.c
+../Core/Src/dht11.c:43:31: error: 'dht_htim' undeclared (first use in this function)
+   43 |         __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |                               ^~~~~~~~
+../Core/Src/dht11.c:44:32: error: 'DHT11_PORT' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                ^~~~~~~~~~
+../Core/Src/dht11.c:44:44: error: 'DHT11_PIN' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                            ^~~~~~~~~
+../Core/Src/dht11.c:44:58: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                                          ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:51:58: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   51 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |                                                          ^~~~~~~~~~~~
+../Core/Src/dht11.c:55:9: error: unknown type name 'uint16_t'
+   55 |         uint16_t pulse_width = __HAL_TIM_GET_COUNTER(dht_htim);
+      |         ^~~~~~~~
+../Core/Src/dht11.c:55:9: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:67:1: error: unknown type name 'HAL_StatusTypeDef'
+   67 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:67:34: error: unknown type name 'DHT11_Data_TypeDef'
+   67 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+   34 | }
+      | ^
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:37:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   37 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:4:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+    4 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:31:1: error: unknown type name 'DHT11_Data_TypeDef'
+   31 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: warning: implicit declaration of function 'MX_TIM1_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+   94 |   MX_TIM1_Init();
+      |   ^~~~~~~~~~~~
+      |   MX_GPIO_Init
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   96 |   DHT11_Init(&htim1);
+      |   ^~~~~~~~~~
+      |   HAL_Init
+../Core/Src/main.c:96:15: error: 'htim1' undeclared (first use in this function)
+   96 |   DHT11_Init(&htim1);
+      |               ^~~~~
+../Core/Src/main.c:96:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_DMA_Start
+../Core/Src/main.c:97:23: error: 'htim6' undeclared (first use in this function)
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |                       ^~~~~
+../Core/Src/main.c:106:14: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+  106 |           if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |              ^~~~~~~~~~~~~~
+../Core/Src/main.c:108:93: error: request for member 'Temperature' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                             ^
+../Core/Src/main.c:108:115: error: request for member 'Humidity' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                                                   ^
+../Core/Src/main.c:108:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+In file included from ../Core/Src/main.c:22:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:109:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:109:69: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include <stdio.h>
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:109:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:109:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:109:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:109:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c:113:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  113 |                      sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:114:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:114:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:114:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:114:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:114:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:125:1: error: expected identifier or '(' before '}' token
+  125 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+22:54:04 **** Incremental Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c:4:8: error: unknown type name 'HAL_StatusTypeDef'
+    4 | static HAL_StatusTypeDef DHT11_Start(void)
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:7:5: warning: implicit declaration of function 'Set_Pin_Output' [-Wimplicit-function-declaration]
+    7 |     Set_Pin_Output();
+      |     ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:8:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:8:23: error: 'DHT11_PORT' undeclared (first use in this function)
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~
+../Core/Src/dht11.c:8:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/dht11.c:8:35: error: 'DHT11_PIN' undeclared (first use in this function)
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                   ^~~~~~~~~
+../Core/Src/dht11.c:8:46: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+    8 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                              ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:9:5: warning: implicit declaration of function 'delay_us' [-Wimplicit-function-declaration]
+    9 |     delay_us(18000); // 18ms 동안 LOW 유지
+      |     ^~~~~~~~
+../Core/Src/dht11.c:10:46: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   10 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+      |                                              ^~~~~~~~~~~~
+../Core/Src/dht11.c:12:5: warning: implicit declaration of function 'Set_Pin_Input' [-Wimplicit-function-declaration]
+   12 |     Set_Pin_Input();
+      |     ^~~~~~~~~~~~~
+../Core/Src/dht11.c:15:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   15 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:15:27: error: 'dht_htim' undeclared (first use in this function)
+   15 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |                           ^~~~~~~~
+../Core/Src/dht11.c:16:11: warning: implicit declaration of function 'HAL_GPIO_ReadPin' [-Wimplicit-function-declaration]
+   16 |     while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |           ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   18 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:58: error: 'HAL_TIMEOUT' undeclared (first use in this function)
+   18 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |                                                          ^~~~~~~~~~~
+../Core/Src/dht11.c:33:12: error: 'HAL_OK' undeclared (first use in this function)
+   33 |     return HAL_OK;
+      |            ^~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:37:8: error: unknown type name 'uint8_t'
+   37 | static uint8_t DHT11_Read_Byte(void)
+      |        ^~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Read_Byte':
+../Core/Src/dht11.c:39:5: error: unknown type name 'uint8_t'
+   39 |     uint8_t data_byte = 0;
+      |     ^~~~~~~
+../Core/Src/dht11.c:1:1: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | // dht11.c
+../Core/Src/dht11.c:43:31: error: 'dht_htim' undeclared (first use in this function)
+   43 |         __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |                               ^~~~~~~~
+../Core/Src/dht11.c:44:32: error: 'DHT11_PORT' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                ^~~~~~~~~~
+../Core/Src/dht11.c:44:44: error: 'DHT11_PIN' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                            ^~~~~~~~~
+../Core/Src/dht11.c:44:58: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   44 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                                          ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:51:58: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   51 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |                                                          ^~~~~~~~~~~~
+../Core/Src/dht11.c:55:9: error: unknown type name 'uint16_t'
+   55 |         uint16_t pulse_width = __HAL_TIM_GET_COUNTER(dht_htim);
+      |         ^~~~~~~~
+../Core/Src/dht11.c:55:9: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:67:1: error: unknown type name 'HAL_StatusTypeDef'
+   67 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:67:34: error: unknown type name 'DHT11_Data_TypeDef'
+   67 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:34:1: warning: control reaches end of non-void function [-Wreturn-type]
+   34 | }
+      | ^
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:37:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   37 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:4:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+    4 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:31:1: error: unknown type name 'DHT11_Data_TypeDef'
+   31 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: warning: implicit declaration of function 'MX_TIM1_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+   94 |   MX_TIM1_Init();
+      |   ^~~~~~~~~~~~
+      |   MX_GPIO_Init
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   96 |   DHT11_Init(&htim1);
+      |   ^~~~~~~~~~
+      |   HAL_Init
+../Core/Src/main.c:96:15: error: 'htim1' undeclared (first use in this function)
+   96 |   DHT11_Init(&htim1);
+      |               ^~~~~
+../Core/Src/main.c:96:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_DMA_Start
+../Core/Src/main.c:97:23: error: 'htim6' undeclared (first use in this function)
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |                       ^~~~~
+../Core/Src/main.c:106:14: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+  106 |           if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |              ^~~~~~~~~~~~~~
+../Core/Src/main.c:108:93: error: request for member 'Temperature' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                             ^
+../Core/Src/main.c:108:115: error: request for member 'Humidity' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                                                   ^
+../Core/Src/main.c:108:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+In file included from ../Core/Src/main.c:22:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:109:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:109:69: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include <stdio.h>
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:109:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:109:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:109:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:109:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c:113:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  113 |                      sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:114:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:114:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:114:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:114:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:114:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:125:1: error: expected identifier or '(' before '}' token
+  125 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+22:57:30 **** Incremental Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c:5:8: error: unknown type name 'TIM_HandleTypeDef'
+    5 | static TIM_HandleTypeDef *dht_htim;
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:8:17: error: unknown type name 'TIM_HandleTypeDef'
+    8 | void DHT11_Init(TIM_HandleTypeDef *htim)
+      |                 ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:14:22: error: unknown type name 'uint16_t'
+   14 | static void delay_us(uint16_t us)
+      |                      ^~~~~~~~
+../Core/Src/dht11.c:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+../Core/Src/dht11.c: In function 'Set_Pin_Output':
+../Core/Src/dht11.c:21:5: error: unknown type name 'GPIO_InitTypeDef'
+   21 |     GPIO_InitTypeDef GPIO_InitStruct = {0};
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:22:20: error: request for member 'Pin' in something not a structure or union
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                    ^
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:22:27: note: in expansion of macro 'DHT11_PIN'
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:2:20: note: each undeclared identifier is reported only once for each function it appears in
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:22:27: note: in expansion of macro 'DHT11_PIN'
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:23:20: error: request for member 'Mode' in something not a structure or union
+   23 |     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull 출력 모드
+      |                    ^
+../Core/Src/dht11.c:23:28: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function)
+   23 |     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull 출력 모드
+      |                            ^~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:24:20: error: request for member 'Speed' in something not a structure or union
+   24 |     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                    ^
+../Core/Src/dht11.c:24:29: error: 'GPIO_SPEED_FREQ_LOW' undeclared (first use in this function)
+   24 |     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:25:5: warning: implicit declaration of function 'HAL_GPIO_Init' [-Wimplicit-function-declaration]
+   25 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |     ^~~~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:25:19: note: in expansion of macro 'DHT11_PORT'
+   25 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |                   ^~~~~~~~~~
+../Core/Src/dht11.c: In function 'Set_Pin_Input':
+../Core/Src/dht11.c:30:5: error: unknown type name 'GPIO_InitTypeDef'
+   30 |     GPIO_InitTypeDef GPIO_InitStruct = {0};
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:31:20: error: request for member 'Pin' in something not a structure or union
+   31 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                    ^
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:31:27: note: in expansion of macro 'DHT11_PIN'
+   31 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:32:20: error: request for member 'Mode' in something not a structure or union
+   32 |     GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 입력 모드
+      |                    ^
+../Core/Src/dht11.c:32:28: error: 'GPIO_MODE_INPUT' undeclared (first use in this function)
+   32 |     GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 입력 모드
+      |                            ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:33:20: error: request for member 'Pull' in something not a structure or union
+   33 |     GPIO_InitStruct.Pull = GPIO_NOPULL; // 풀업은 외부에 있으므로 No-pull
+      |                    ^
+../Core/Src/dht11.c:33:28: error: 'GPIO_NOPULL' undeclared (first use in this function)
+   33 |     GPIO_InitStruct.Pull = GPIO_NOPULL; // 풀업은 외부에 있으므로 No-pull
+      |                            ^~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:34:19: note: in expansion of macro 'DHT11_PORT'
+   34 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |                   ^~~~~~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:40:8: error: unknown type name 'HAL_StatusTypeDef'
+   40 | static HAL_StatusTypeDef DHT11_Start(void)
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:44:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:44:23: note: in expansion of macro 'DHT11_PORT'
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:44:35: note: in expansion of macro 'DHT11_PIN'
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                   ^~~~~~~~~
+../Core/Src/dht11.c:44:46: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                              ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:45:5: warning: implicit declaration of function 'delay_us' [-Wimplicit-function-declaration]
+   45 |     delay_us(18000); // 18ms 동안 LOW 유지
+      |     ^~~~~~~~
+../Core/Src/dht11.c:46:46: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   46 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+      |                                              ^~~~~~~~~~~~
+../Core/Src/dht11.c:51:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   51 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:52:11: warning: implicit declaration of function 'HAL_GPIO_ReadPin' [-Wimplicit-function-declaration]
+   52 |     while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |           ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:54:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   54 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:54:58: error: 'HAL_TIMEOUT' undeclared (first use in this function)
+   54 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |                                                          ^~~~~~~~~~~
+../Core/Src/dht11.c:69:12: error: 'HAL_OK' undeclared (first use in this function)
+   69 |     return HAL_OK;
+      |            ^~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:73:8: error: unknown type name 'uint8_t'
+   73 | static uint8_t DHT11_Read_Byte(void)
+      |        ^~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Read_Byte':
+../Core/Src/dht11.c:75:5: error: unknown type name 'uint8_t'
+   75 |     uint8_t data_byte = 0;
+      |     ^~~~~~~
+../Core/Src/dht11.c:75:5: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:80:32: note: in expansion of macro 'DHT11_PORT'
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                ^~~~~~~~~~
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:80:44: note: in expansion of macro 'DHT11_PIN'
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                            ^~~~~~~~~
+../Core/Src/dht11.c:80:58: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                                          ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:87:58: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   87 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |                                                          ^~~~~~~~~~~~
+../Core/Src/dht11.c:91:9: error: unknown type name 'uint16_t'
+   91 |         uint16_t pulse_width = __HAL_TIM_GET_COUNTER(dht_htim);
+      |         ^~~~~~~~
+../Core/Src/dht11.c:91:9: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:103:1: error: unknown type name 'HAL_StatusTypeDef'
+  103 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:103:34: error: unknown type name 'DHT11_Data_TypeDef'
+  103 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:70:1: warning: control reaches end of non-void function [-Wreturn-type]
+   70 | }
+      | ^
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:73:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   73 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:40:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+   40 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:31:1: error: unknown type name 'DHT11_Data_TypeDef'
+   31 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: warning: implicit declaration of function 'MX_TIM1_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+   94 |   MX_TIM1_Init();
+      |   ^~~~~~~~~~~~
+      |   MX_GPIO_Init
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   96 |   DHT11_Init(&htim1);
+      |   ^~~~~~~~~~
+      |   HAL_Init
+../Core/Src/main.c:96:15: error: 'htim1' undeclared (first use in this function)
+   96 |   DHT11_Init(&htim1);
+      |               ^~~~~
+../Core/Src/main.c:96:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_DMA_Start
+../Core/Src/main.c:97:23: error: 'htim6' undeclared (first use in this function)
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |                       ^~~~~
+../Core/Src/main.c:106:14: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+  106 |           if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |              ^~~~~~~~~~~~~~
+../Core/Src/main.c:108:93: error: request for member 'Temperature' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                             ^
+../Core/Src/main.c:108:115: error: request for member 'Humidity' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                                                   ^
+../Core/Src/main.c:108:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+In file included from ../Core/Src/main.c:22:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:109:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:109:69: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include <stdio.h>
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:109:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:109:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:109:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:109:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c:113:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  113 |                      sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:114:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:114:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:114:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:114:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:114:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:125:1: error: expected identifier or '(' before '}' token
+  125 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+22:57:35 **** Incremental Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c:5:8: error: unknown type name 'TIM_HandleTypeDef'
+    5 | static TIM_HandleTypeDef *dht_htim;
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:8:17: error: unknown type name 'TIM_HandleTypeDef'
+    8 | void DHT11_Init(TIM_HandleTypeDef *htim)
+      |                 ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:14:22: error: unknown type name 'uint16_t'
+   14 | static void delay_us(uint16_t us)
+      |                      ^~~~~~~~
+../Core/Src/dht11.c:1:1: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+  +++ |+#include <stdint.h>
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+../Core/Src/dht11.c: In function 'Set_Pin_Output':
+../Core/Src/dht11.c:21:5: error: unknown type name 'GPIO_InitTypeDef'
+   21 |     GPIO_InitTypeDef GPIO_InitStruct = {0};
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:22:20: error: request for member 'Pin' in something not a structure or union
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                    ^
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:22:27: note: in expansion of macro 'DHT11_PIN'
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:2:20: note: each undeclared identifier is reported only once for each function it appears in
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:22:27: note: in expansion of macro 'DHT11_PIN'
+   22 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:23:20: error: request for member 'Mode' in something not a structure or union
+   23 |     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull 출력 모드
+      |                    ^
+../Core/Src/dht11.c:23:28: error: 'GPIO_MODE_OUTPUT_PP' undeclared (first use in this function)
+   23 |     GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP; // Push-Pull 출력 모드
+      |                            ^~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:24:20: error: request for member 'Speed' in something not a structure or union
+   24 |     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                    ^
+../Core/Src/dht11.c:24:29: error: 'GPIO_SPEED_FREQ_LOW' undeclared (first use in this function)
+   24 |     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+      |                             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:25:5: warning: implicit declaration of function 'HAL_GPIO_Init' [-Wimplicit-function-declaration]
+   25 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |     ^~~~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:25:19: note: in expansion of macro 'DHT11_PORT'
+   25 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |                   ^~~~~~~~~~
+../Core/Src/dht11.c: In function 'Set_Pin_Input':
+../Core/Src/dht11.c:30:5: error: unknown type name 'GPIO_InitTypeDef'
+   30 |     GPIO_InitTypeDef GPIO_InitStruct = {0};
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:31:20: error: request for member 'Pin' in something not a structure or union
+   31 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                    ^
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:31:27: note: in expansion of macro 'DHT11_PIN'
+   31 |     GPIO_InitStruct.Pin = DHT11_PIN;
+      |                           ^~~~~~~~~
+../Core/Src/dht11.c:32:20: error: request for member 'Mode' in something not a structure or union
+   32 |     GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 입력 모드
+      |                    ^
+../Core/Src/dht11.c:32:28: error: 'GPIO_MODE_INPUT' undeclared (first use in this function)
+   32 |     GPIO_InitStruct.Mode = GPIO_MODE_INPUT; // 입력 모드
+      |                            ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:33:20: error: request for member 'Pull' in something not a structure or union
+   33 |     GPIO_InitStruct.Pull = GPIO_NOPULL; // 풀업은 외부에 있으므로 No-pull
+      |                    ^
+../Core/Src/dht11.c:33:28: error: 'GPIO_NOPULL' undeclared (first use in this function)
+   33 |     GPIO_InitStruct.Pull = GPIO_NOPULL; // 풀업은 외부에 있으므로 No-pull
+      |                            ^~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:34:19: note: in expansion of macro 'DHT11_PORT'
+   34 |     HAL_GPIO_Init(DHT11_PORT, &GPIO_InitStruct);
+      |                   ^~~~~~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:40:8: error: unknown type name 'HAL_StatusTypeDef'
+   40 | static HAL_StatusTypeDef DHT11_Start(void)
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:44:5: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |     ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:44:23: note: in expansion of macro 'DHT11_PORT'
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                       ^~~~~~~~~~
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:44:35: note: in expansion of macro 'DHT11_PIN'
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                   ^~~~~~~~~
+../Core/Src/dht11.c:44:46: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   44 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_RESET);
+      |                                              ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:45:5: warning: implicit declaration of function 'delay_us' [-Wimplicit-function-declaration]
+   45 |     delay_us(18000); // 18ms 동안 LOW 유지
+      |     ^~~~~~~~
+../Core/Src/dht11.c:46:46: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   46 |     HAL_GPIO_WritePin(DHT11_PORT, DHT11_PIN, GPIO_PIN_SET);
+      |                                              ^~~~~~~~~~~~
+../Core/Src/dht11.c:51:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   51 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:52:11: warning: implicit declaration of function 'HAL_GPIO_ReadPin' [-Wimplicit-function-declaration]
+   52 |     while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |           ^~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:54:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   54 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:54:58: error: 'HAL_TIMEOUT' undeclared (first use in this function)
+   54 |         if(__HAL_TIM_GET_COUNTER(dht_htim) > 100) return HAL_TIMEOUT; // 100us 타임아웃
+      |                                                          ^~~~~~~~~~~
+../Core/Src/dht11.c:69:12: error: 'HAL_OK' undeclared (first use in this function)
+   69 |     return HAL_OK;
+      |            ^~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:73:8: error: unknown type name 'uint8_t'
+   73 | static uint8_t DHT11_Read_Byte(void)
+      |        ^~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Read_Byte':
+../Core/Src/dht11.c:75:5: error: unknown type name 'uint8_t'
+   75 |     uint8_t data_byte = 0;
+      |     ^~~~~~~
+../Core/Src/dht11.c:75:5: note: 'uint8_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c:1:20: error: 'GPIOA' undeclared (first use in this function)
+    1 | #define DHT11_PORT GPIOA // CubeMX에서 설정한 포트로 변경
+      |                    ^~~~~
+../Core/Src/dht11.c:80:32: note: in expansion of macro 'DHT11_PORT'
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                ^~~~~~~~~~
+../Core/Src/dht11.c:2:20: error: 'GPIO_PIN_8' undeclared (first use in this function)
+    2 | #define DHT11_PIN  GPIO_PIN_8 // CubeMX에서 설정한 핀으로 변경
+      |                    ^~~~~~~~~~
+../Core/Src/dht11.c:80:44: note: in expansion of macro 'DHT11_PIN'
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                            ^~~~~~~~~
+../Core/Src/dht11.c:80:58: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   80 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_RESET)
+      |                                                          ^~~~~~~~~~~~~~
+../Core/Src/dht11.c:87:58: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   87 |         while(HAL_GPIO_ReadPin(DHT11_PORT, DHT11_PIN) == GPIO_PIN_SET)
+      |                                                          ^~~~~~~~~~~~
+../Core/Src/dht11.c:91:9: error: unknown type name 'uint16_t'
+   91 |         uint16_t pulse_width = __HAL_TIM_GET_COUNTER(dht_htim);
+      |         ^~~~~~~~
+../Core/Src/dht11.c:91:9: note: 'uint16_t' is defined in header '<stdint.h>'; did you forget to '#include <stdint.h>'?
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:103:1: error: unknown type name 'HAL_StatusTypeDef'
+  103 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:103:34: error: unknown type name 'DHT11_Data_TypeDef'
+  103 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'DHT11_Start':
+../Core/Src/dht11.c:70:1: warning: control reaches end of non-void function [-Wreturn-type]
+   70 | }
+      | ^
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:73:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   73 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:40:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+   40 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:31:1: error: unknown type name 'DHT11_Data_TypeDef'
+   31 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: warning: implicit declaration of function 'MX_TIM1_Init'; did you mean 'MX_GPIO_Init'? [-Wimplicit-function-declaration]
+   94 |   MX_TIM1_Init();
+      |   ^~~~~~~~~~~~
+      |   MX_GPIO_Init
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   96 |   DHT11_Init(&htim1);
+      |   ^~~~~~~~~~
+      |   HAL_Init
+../Core/Src/main.c:96:15: error: 'htim1' undeclared (first use in this function)
+   96 |   DHT11_Init(&htim1);
+      |               ^~~~~
+../Core/Src/main.c:96:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:97:3: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_DMA_Start
+../Core/Src/main.c:97:23: error: 'htim6' undeclared (first use in this function)
+   97 |   HAL_TIM_Base_Start(&htim6);
+      |                       ^~~~~
+../Core/Src/main.c:106:14: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+  106 |           if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |              ^~~~~~~~~~~~~~
+../Core/Src/main.c:108:93: error: request for member 'Temperature' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                             ^
+../Core/Src/main.c:108:115: error: request for member 'Humidity' in something not a structure or union
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                                                                                                                   ^
+../Core/Src/main.c:108:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  108 |                      sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",dht_data.Temperature, dht_data.Humidity);
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+In file included from ../Core/Src/main.c:22:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:109:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:109:69: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include <stdio.h>
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:109:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:109:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:109:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  109 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:109:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c:113:30: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  113 |                      sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                              ^~~~~~~~
+      |                              |
+      |                              char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:114:49: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                 ^
+../Core/Src/main.c:114:69: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                     ^~~~~~
+../Core/Src/main.c:114:69: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:114:76: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+  114 |                      HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                            ^~~~~~~~
+      |                                                                            |
+      |                                                                            char
+../Core/Src/main.c:114:76: note: expected 'const char *' but argument is of type 'char'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:125:1: error: expected identifier or '(' before '}' token
+  125 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+05:18:50 **** Incremental Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c:4:8: error: unknown type name 'TIM_HandleTypeDef'
+    4 | static TIM_HandleTypeDef *dht_htim;
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:17: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   18 | void DHT11_Init(TIM_HandleTypeDef *htim)
+      |                 ^~~~~~~~~~~~~~~~~
+      |                 DMA_HandleTypeDef
+../Core/Src/main.c:8:1: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+    8 | TIM_HandleTypeDef htim6;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main.c:11:1: error: unknown type name 'DHT11_Data_TypeDef'
+   11 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'delay_us':
+../Core/Src/dht11.c:26:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   26 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:18:5: warning: implicit declaration of function 'SystemClock_Config'; did you mean 'SysTick_Config'? [-Wimplicit-function-declaration]
+   18 |     SystemClock_Config();
+      |     ^~~~~~~~~~~~~~~~~~
+      |     SysTick_Config
+../Core/Src/main.c:19:5: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+   19 |     MX_GPIO_Init();
+      |     ^~~~~~~~~~~~
+      |     HAL_GPIO_Init
+../Core/Src/dht11.c:27:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   27 |     while (__HAL_TIM_GET_COUNTER(dht_htim) < us);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:20:5: warning: implicit declaration of function 'MX_TIM6_Init' [-Wimplicit-function-declaration]
+   20 |     MX_TIM6_Init();
+      |     ^~~~~~~~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:110:34: error: unknown type name 'DHT11_Data_TypeDef'
+  110 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:83:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   83 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:51:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+   51 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:21:5: warning: implicit declaration of function 'MX_USART2_UART_Init' [-Wimplicit-function-declaration]
+   21 |     MX_USART2_UART_Init();
+      |     ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:23:5: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   23 |     DHT11_Init(&htim6);
+      |     ^~~~~~~~~~
+      |     HAL_Init
+../Core/Src/main.c:24:5: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   24 |     HAL_TIM_Base_Start(&htim6);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     HAL_DMA_Start
+../Core/Src/main.c:28:12: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+   28 |         if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |            ^~~~~~~~~~~~~~
+../Core/Src/main.c:32:29: error: request for member 'Temperature' in something not a structure or union
+   32 |                     dht_data.Temperature, dht_data.Humidity);
+      |                             ^
+../Core/Src/main.c:32:51: error: request for member 'Humidity' in something not a structure or union
+   32 |                     dht_data.Temperature, dht_data.Humidity);
+      |                                                   ^
+../Core/Src/main.c:31:21: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+   31 |             sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",
+      |                     ^~~~~~~~
+      |                     |
+      |                     char
+In file included from ../Core/Src/main.c:4:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:33:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   33 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                        ^
+../Core/Src/main.c:33:67: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   33 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                   ^~~~~~~~
+      |                                                                   |
+      |                                                                   char
+In file included from ../Core/Src/main.c:5:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'char'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:37:21: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+   37 |             sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                     ^~~~~~~~
+      |                     |
+      |                     char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:38:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   38 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                        ^
+../Core/Src/main.c:38:67: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   38 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                   ^~~~~~~~
+      |                                                                   |
+      |                                                                   char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'char'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.

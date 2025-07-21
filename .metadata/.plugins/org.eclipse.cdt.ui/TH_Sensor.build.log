@@ -1,0 +1,114 @@
+05:18:50 **** Incremental Build of configuration Debug for project TH_Sensor ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/dht11.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dht11.d" -MT"Core/Src/dht11.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dht11.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/dht11.c:4:8: error: unknown type name 'TIM_HandleTypeDef'
+    4 | static TIM_HandleTypeDef *dht_htim;
+      |        ^~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:18:17: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+   18 | void DHT11_Init(TIM_HandleTypeDef *htim)
+      |                 ^~~~~~~~~~~~~~~~~
+      |                 DMA_HandleTypeDef
+../Core/Src/main.c:8:1: error: unknown type name 'TIM_HandleTypeDef'; did you mean 'DMA_HandleTypeDef'?
+    8 | TIM_HandleTypeDef htim6;
+      | ^~~~~~~~~~~~~~~~~
+      | DMA_HandleTypeDef
+../Core/Src/main.c:11:1: error: unknown type name 'DHT11_Data_TypeDef'
+   11 | DHT11_Data_TypeDef dht_data;
+      | ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c: In function 'delay_us':
+../Core/Src/dht11.c:26:5: warning: implicit declaration of function '__HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+   26 |     __HAL_TIM_SET_COUNTER(dht_htim, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:18:5: warning: implicit declaration of function 'SystemClock_Config'; did you mean 'SysTick_Config'? [-Wimplicit-function-declaration]
+   18 |     SystemClock_Config();
+      |     ^~~~~~~~~~~~~~~~~~
+      |     SysTick_Config
+../Core/Src/main.c:19:5: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+   19 |     MX_GPIO_Init();
+      |     ^~~~~~~~~~~~
+      |     HAL_GPIO_Init
+../Core/Src/dht11.c:27:12: warning: implicit declaration of function '__HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+   27 |     while (__HAL_TIM_GET_COUNTER(dht_htim) < us);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:20:5: warning: implicit declaration of function 'MX_TIM6_Init' [-Wimplicit-function-declaration]
+   20 |     MX_TIM6_Init();
+      |     ^~~~~~~~~~~~
+../Core/Src/dht11.c: At top level:
+../Core/Src/dht11.c:110:34: error: unknown type name 'DHT11_Data_TypeDef'
+  110 | HAL_StatusTypeDef DHT11_ReadData(DHT11_Data_TypeDef *data)
+      |                                  ^~~~~~~~~~~~~~~~~~
+../Core/Src/dht11.c:83:16: warning: 'DHT11_Read_Byte' defined but not used [-Wunused-function]
+   83 | static uint8_t DHT11_Read_Byte(void)
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/dht11.c:51:26: warning: 'DHT11_Start' defined but not used [-Wunused-function]
+   51 | static HAL_StatusTypeDef DHT11_Start(void)
+      |                          ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/dht11.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:21:5: warning: implicit declaration of function 'MX_USART2_UART_Init' [-Wimplicit-function-declaration]
+   21 |     MX_USART2_UART_Init();
+      |     ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:23:5: warning: implicit declaration of function 'DHT11_Init'; did you mean 'HAL_Init'? [-Wimplicit-function-declaration]
+   23 |     DHT11_Init(&htim6);
+      |     ^~~~~~~~~~
+      |     HAL_Init
+../Core/Src/main.c:24:5: warning: implicit declaration of function 'HAL_TIM_Base_Start'; did you mean 'HAL_DMA_Start'? [-Wimplicit-function-declaration]
+   24 |     HAL_TIM_Base_Start(&htim6);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     HAL_DMA_Start
+../Core/Src/main.c:28:12: warning: implicit declaration of function 'DHT11_ReadData' [-Wimplicit-function-declaration]
+   28 |         if(DHT11_ReadData(&dht_data) == HAL_OK)
+      |            ^~~~~~~~~~~~~~
+../Core/Src/main.c:32:29: error: request for member 'Temperature' in something not a structure or union
+   32 |                     dht_data.Temperature, dht_data.Humidity);
+      |                             ^
+../Core/Src/main.c:32:51: error: request for member 'Humidity' in something not a structure or union
+   32 |                     dht_data.Temperature, dht_data.Humidity);
+      |                                                   ^
+../Core/Src/main.c:31:21: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+   31 |             sprintf(uart_buf, "Temperature: %.1f C, Humidity: %.1f %%\r\n",
+      |                     ^~~~~~~~
+      |                     |
+      |                     char
+In file included from ../Core/Src/main.c:4:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:33:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   33 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                        ^
+../Core/Src/main.c:33:67: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   33 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                   ^~~~~~~~
+      |                                                                   |
+      |                                                                   char
+In file included from ../Core/Src/main.c:5:
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'char'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+../Core/Src/main.c:37:21: warning: passing argument 1 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+   37 |             sprintf(uart_buf, "Failed to read from DHT sensor!\r\n");
+      |                     ^~~~~~~~
+      |                     |
+      |                     char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/stdio.h:250:18: note: expected 'char * restrict' but argument is of type 'char'
+  250 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:38:40: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   38 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                        ^
+../Core/Src/main.c:38:67: warning: passing argument 1 of 'strlen' makes pointer from integer without a cast [-Wint-conversion]
+   38 |             HAL_UART_Transmit(&huart2, (uint8_t*)uart_buf, strlen(uart_buf), HAL_MAX_DELAY);
+      |                                                                   ^~~~~~~~
+      |                                                                   |
+      |                                                                   char
+/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/arm-none-eabi/include/string.h:41:18: note: expected 'const char *' but argument is of type 'char'
+   41 | size_t   strlen (const char *);
+      |                  ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+
+05:18:50 Build Failed. 10 errors, 17 warnings. (took 182ms)
+
